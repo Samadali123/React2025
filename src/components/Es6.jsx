@@ -1,7 +1,11 @@
+import styles from '../styles/Heading.module.css';
+
+
 // Named Export
 export const name = "Syed Samad Ali";
+
 export function SayName() { return `Helllo Sir `; }
 
 // Default Export
-export default function MyComponent() { return <h1>Hello</h1>; }
+export default function MyComponent() { return <h1 className={styles.heading} >Hello</h1>; }
 
