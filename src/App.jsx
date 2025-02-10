@@ -16,6 +16,7 @@ import MyComponent from './components/Mycomponent';
 import Counter2 from './components/Counter2';
 import Timer from './components/Timer';
 import Users from './components/Users';
+import InputFocus from './components/Inputfocus';
 
 
 
@@ -50,6 +51,7 @@ const UserProfileWithLoading = WithLoading(UserProfile);
         <Counter2/>
         <Timer/>
         <Users/>
+        <InputFocus/>
       </div>
       </> 
   )
