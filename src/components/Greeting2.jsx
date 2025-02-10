@@ -1,8 +1,11 @@
 import React from 'react'
-
+import {SayName,name } from './Es6'
 const Greeting2 = () => {
   return (
-    <div>Hello Samad2</div>
+    <div>
+      <SayName/> 
+        `{name}`
+      </div>
   )
 }
 
