@@ -11,6 +11,7 @@ import UserStatus from './components/UserStatus';
 import WithLoading from './components/WithLoading';
 import UserProfile from './components/UserProfile';
 import Button from './components/Button';
+import GrandParent from './components/GrandParent';
 
 
 
@@ -35,9 +36,12 @@ const UserProfileWithLoading = WithLoading(UserProfile);
       <UserList users ={users} />
       <FilteredList items={items}/>
       <UserStatus  isLoggedIn={true}/>
-      <UserProfileWithLoading isLoading={true} name="Samad" />;
+      <UserProfileWithLoading isLoading={true} name="Samad" />
+      <div className='w-full flex justify-center '>
       <Button text="Save" onClick={() => alert("Saved!")} />
       <Button text="Delete" onClick={() => alert("Deleted!")} />
+        <GrandParent/>
+      </div>
       </> 
   )
 }
