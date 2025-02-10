@@ -10,6 +10,8 @@ import FilteredList from './components/FilteredList';
 import UserStatus from './components/UserStatus';
 import WithLoading from './components/WithLoading';
 import UserProfile from './components/UserProfile';
+import Button from './components/Button';
+
 
 
 const App = () => {
@@ -34,6 +36,8 @@ const UserProfileWithLoading = WithLoading(UserProfile);
       <FilteredList items={items}/>
       <UserStatus  isLoggedIn={true}/>
       <UserProfileWithLoading isLoading={true} name="Samad" />;
+      <Button text="Save" onClick={() => alert("Saved!")} />
+      <Button text="Delete" onClick={() => alert("Deleted!")} />
       </> 
   )
 }
