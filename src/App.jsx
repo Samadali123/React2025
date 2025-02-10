@@ -13,6 +13,9 @@ import UserProfile from './components/UserProfile';
 import Button from './components/Button';
 import GrandParent from './components/GrandParent';
 import MyComponent from './components/Mycomponent';
+import Counter2 from './components/Counter2';
+import Timer from './components/Timer';
+import Users from './components/Users';
 
 
 
@@ -44,6 +47,9 @@ const UserProfileWithLoading = WithLoading(UserProfile);
       <Button text="Delete" onClick={() => alert("Deleted!")} />
         <GrandParent/>
         <MyComponent/>
+        <Counter2/>
+        <Timer/>
+        <Users/>
       </div>
       </> 
   )
