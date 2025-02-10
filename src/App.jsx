@@ -8,6 +8,8 @@ import Profile from './components/Profile';
 import UserList from './components/Userlist';
 import FilteredList from './components/FilteredList';
 import UserStatus from './components/UserStatus';
+import WithLoading from './components/WithLoading';
+import UserProfile from './components/UserProfile';
 
 
 const App = () => {
@@ -15,6 +17,9 @@ const App = () => {
   const element = <h1>Hello,Developers ! </h1>;
   const users = ["Samad", "Ali", "John"];
   const items = ["Apple", "Banana", "Cherry"];
+  // Wrapping the Component with HOC
+const UserProfileWithLoading = WithLoading(UserProfile);
+
   return (
     <>
       <Greeting/>
@@ -28,6 +33,7 @@ const App = () => {
       <UserList users ={users} />
       <FilteredList items={items}/>
       <UserStatus  isLoggedIn={true}/>
+      <UserProfileWithLoading isLoading={true} name="Samad" />;
       </> 
   )
 }
