@@ -17,6 +17,7 @@ import Counter2 from './components/Counter2';
 import Timer from './components/Timer';
 import Users from './components/Users';
 import InputFocus from './components/Inputfocus';
+import ExpensiveCalculation from './components/ExpensiveCalculatation';
 
 
 
@@ -52,6 +53,7 @@ const UserProfileWithLoading = WithLoading(UserProfile);
         <Timer/>
         <Users/>
         <InputFocus/>
+        <ExpensiveCalculation/>
       </div>
       </> 
   )
