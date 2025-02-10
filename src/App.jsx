@@ -12,6 +12,8 @@ import WithLoading from './components/WithLoading';
 import UserProfile from './components/UserProfile';
 import Button from './components/Button';
 import GrandParent from './components/GrandParent';
+import MyComponent from './components/Mycomponent';
+
 
 
 
@@ -41,6 +43,7 @@ const UserProfileWithLoading = WithLoading(UserProfile);
       <Button text="Save" onClick={() => alert("Saved!")} />
       <Button text="Delete" onClick={() => alert("Deleted!")} />
         <GrandParent/>
+        <MyComponent/>
       </div>
       </> 
   )

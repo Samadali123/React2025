@@ -4,7 +4,7 @@ import Parent from './Parent'
 const GrandParent = () => {
   return (
     <div>
-        <Parent message="Hello from Grandparent!" />;
+        <Parent message="Hello from Grandparent to Child !" />;
     </div>
   )
 }
